@@ -1,0 +1,27 @@
+{
+    "key": "group_63426275df623",
+    "title": "Hero Module",
+    "fields": [],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 0,
+    "graphql_field_name": "heroModule",
+    "map_graphql_types_from_location_rules": 0,
+    "modified": 1665294974
+}
