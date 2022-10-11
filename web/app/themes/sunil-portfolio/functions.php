@@ -190,7 +190,7 @@ require get_template_directory() . '/inc/module-register.php';
 require get_template_directory() . '/inc/custom-block-categories.php';
 
 
-require get_template_directory() . '/inc/sync-acf.php';
+//require get_template_directory() . '/inc/sync-acf.php';
 
 
 /**
