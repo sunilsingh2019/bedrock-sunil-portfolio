@@ -1,8 +1,8 @@
 <?php
-add_action( 'init', 'services_register_post_type' );
-function services_register_post_type() {
+add_action( 'init', 'sunil_portfolio_services_register_post_type' );
+function sunil_portfolio_services_register_post_type() {
 	$args = [
-		'label'  => esc_html__( 'Services', 'text-domain' ),
+		'label'  => esc_html__( 'Services', 'sunil_portfolio' ),
 		'labels' => [
 			'menu_name'          => esc_html__( 'Services', 'sunil_portfolio' ),
 			'name_admin_bar'     => esc_html__( 'Service', 'sunil_portfolio' ),
