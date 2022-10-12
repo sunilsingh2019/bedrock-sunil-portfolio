@@ -18,6 +18,29 @@ function nextgen_doncaster_acf_init() {
 			
 		));
 
+		acf_register_block(array(
+			'name'				=> 'home-intro-module',
+			'title'				=> __('Home Intro Module'),
+			'description'		=> __('Home Intro Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'intro', 'home', 'about' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+
+		acf_register_block(array(
+			'name'				=> 'services-module',
+			'title'				=> __('Services Module'),
+			'description'		=> __('Services Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'service', 'services', 'work' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
 
 		acf_register_block(array(
 			'name'				=> 'cta-module',

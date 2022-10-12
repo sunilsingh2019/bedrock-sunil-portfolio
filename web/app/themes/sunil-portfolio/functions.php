@@ -183,6 +183,10 @@ add_action( 'wp_enqueue_scripts', 'sunil_portfolio_scripts' );
 /**
  * Implement the Custom blocks.
  */
+require get_template_directory() . '/inc/register-post-types.php';
+/**
+ * Implement the Custom blocks.
+ */
 require get_template_directory() . '/inc/module-register.php';
 /**
  * Implement the Custom blocks category.
