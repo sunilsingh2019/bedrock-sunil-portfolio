@@ -115,6 +115,7 @@ function sunil_portfolio_content_width() {
 add_action( 'after_setup_theme', 'sunil_portfolio_content_width', 0 );
 
 
+
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
@@ -122,24 +123,27 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Theme Settings',
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
-		'redirect'		=> true
+		'redirect'		=> true,
 	));
 	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Header Settings',
 		'menu_title'	=> 'Header',
 		'parent_slug'	=> 'theme-general-settings',
+		'show_in_graphql' => true
 	));
 	
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Footer Settings',
 		'menu_title'	=> 'Footer',
 		'parent_slug'	=> 'theme-general-settings',
+		'show_in_graphql' => true
 	));
 	acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Social Icon Settings',
 		'menu_title'	=> 'Social Icon',
 		'parent_slug'	=> 'theme-general-settings',
+		'show_in_graphql' => true
 	));
 	
 }
