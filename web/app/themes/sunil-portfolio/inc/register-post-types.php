@@ -110,3 +110,62 @@ function projects() {
 
 	register_post_type( 'project', $args );
 }
+
+
+add_action( 'init', 'sunil_portfolio_testimonial' );
+function sunil_portfolio_testimonial() {
+	$args = [
+		'label'  => esc_html__( 'Testimonials', 'text-domain' ),
+		'labels' => [
+			'menu_name'          => esc_html__( 'Testimonials', 'sunil-portfolio' ),
+			'name_admin_bar'     => esc_html__( 'Testimonial', 'sunil-portfolio' ),
+			'add_new'            => esc_html__( 'Add Testimonial', 'sunil-portfolio' ),
+			'add_new_item'       => esc_html__( 'Add new Testimonial', 'sunil-portfolio' ),
+			'new_item'           => esc_html__( 'New Testimonial', 'sunil-portfolio' ),
+			'edit_item'          => esc_html__( 'Edit Testimonial', 'sunil-portfolio' ),
+			'view_item'          => esc_html__( 'View Testimonial', 'sunil-portfolio' ),
+			'update_item'        => esc_html__( 'View Testimonial', 'sunil-portfolio' ),
+			'all_items'          => esc_html__( 'All Testimonials', 'sunil-portfolio' ),
+			'search_items'       => esc_html__( 'Search Testimonials', 'sunil-portfolio' ),
+			'parent_item_colon'  => esc_html__( 'Parent Testimonial', 'sunil-portfolio' ),
+			'not_found'          => esc_html__( 'No Testimonials found', 'sunil-portfolio' ),
+			'not_found_in_trash' => esc_html__( 'No Testimonials found in Trash', 'sunil-portfolio' ),
+			'name'               => esc_html__( 'Testimonials', 'sunil-portfolio' ),
+			'singular_name'      => esc_html__( 'Testimonial', 'sunil-portfolio' ),
+		],
+		'public'              => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'show_ui'             => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'show_in_rest'        => true,
+		'capability_type'     => 'post',
+		'hierarchical'        => false,
+		'has_archive'         => true,
+		'query_var'           => true,
+		'can_export'          => true,
+		'rewrite_no_front'    => false,
+		'show_in_menu'        => true,
+		'menu_position'       => 20,
+		'show_in_graphql' 	  => true,
+		'graphql_single_name' => 'Testimonial',
+        'graphql_plural_name' => 'Testimonials',
+		'menu_icon'           => 'dashicons-admin-users',
+		'supports' => [
+			'title',
+			'editor',
+			'author',
+			'thumbnail',
+			'trackbacks',
+			'custom-fields',
+			'comments',
+			'revisions',
+			'page-attributes',
+		],
+		
+		'rewrite' => true
+	];
+
+	register_post_type( 'testimonial', $args );
+}
