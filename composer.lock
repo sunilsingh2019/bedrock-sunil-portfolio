@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "049ee5a75ef2618b04cdcae4ab9f0375",
+    "content-hash": "75c0950ec00019574daa0583ba896bd5",
     "packages": [
         {
             "name": "appsero/client",
@@ -1676,6 +1676,42 @@
                 "source": "https://github.com/wp-graphql/wp-graphql-acf/tree/v0.6.1"
             },
             "time": "2022-09-16T16:50:00+00:00"
+        },
+        {
+            "name": "wp-graphql/wp-graphql-custom-post-type-ui",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-graphql/wp-graphql-custom-post-type-ui.git",
+                "reference": "76e441b76b9ae0e62518d379e661c00893ebb2ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-graphql/wp-graphql-custom-post-type-ui/zipball/76e441b76b9ae0e62518d379e661c00893ebb2ab",
+                "reference": "76e441b76b9ae0e62518d379e661c00893ebb2ab",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Bahl",
+                    "email": "jasonbahl@mac.com"
+                },
+                {
+                    "name": "Rachel Bahl",
+                    "email": "rachelbahl@gmail.com"
+                }
+            ],
+            "description": "Add your Custom Post Types and Custom Taxonomies to the WPGraphQL Schema using Custom Post Type UI plugin",
+            "support": {
+                "issues": "https://github.com/wp-graphql/wp-graphql-custom-post-type-ui/issues",
+                "source": "https://github.com/wp-graphql/wp-graphql-custom-post-type-ui/tree/v1.2.0"
+            },
+            "time": "2021-03-24T19:36:22+00:00"
         },
         {
             "name": "wpackagist-theme/twentytwentytwo",
