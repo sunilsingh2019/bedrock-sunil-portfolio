@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0841fa0e190adc31252a29dbb54c69c3",
+    "content-hash": "049ee5a75ef2618b04cdcae4ab9f0375",
     "packages": [
         {
             "name": "appsero/client",
@@ -543,33 +543,6 @@
             "time": "2022-05-18T17:14:57+00:00"
         },
         {
-            "name": "pristas-peter/wp-graphql-gutenberg-acf",
-            "version": "v0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pristas-peter/wp-graphql-gutenberg-acf.git",
-                "reference": "b9d7855cad2dbf1656a1163728840bb35808a698"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pristas-peter/wp-graphql-gutenberg-acf/zipball/b9d7855cad2dbf1656a1163728840bb35808a698",
-                "reference": "b9d7855cad2dbf1656a1163728840bb35808a698",
-                "shasum": ""
-            },
-            "require": {
-                "pristas-peter/wp-graphql-gutenberg": "^0.3.0",
-                "wp-graphql/wp-graphql-acf": "^0.3.3"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Expose acf blocks through graphql",
-            "support": {
-                "issues": "https://github.com/pristas-peter/wp-graphql-gutenberg-acf/issues",
-                "source": "https://github.com/pristas-peter/wp-graphql-gutenberg-acf/tree/master"
-            },
-            "time": "2020-05-29T06:06:47+00:00"
-        },
-        {
             "name": "roots/bedrock-autoloader",
             "version": "1.0.4",
             "source": {
@@ -705,7 +678,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "6.0.2",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -736,7 +709,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/6.0.2"
+                "source": "https://github.com/roots/wordpress/tree/6.0.3"
             },
             "funding": [
                 {
@@ -823,22 +796,22 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "6.0.2",
+            "version": "6.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "6.0.2"
+                "reference": "6.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-6.0.2-no-content.zip",
-                "shasum": "9e78ef932a99d62e6a0b045ff846fe5b2bf35e29"
+                "url": "https://downloads.wordpress.org/release/wordpress-6.0.3-no-content.zip",
+                "shasum": "39bb6da76aa5c28c4288593e0cd6a710cde7db6e"
             },
             "require": {
                 "php": ">= 5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "6.0.2"
+                "wordpress/core-implementation": "6.0.3"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -889,7 +862,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2022-08-30T17:52:03+00:00"
+            "time": "2022-10-17T22:55:15+00:00"
         },
         {
             "name": "roots/wp-config",
@@ -1332,16 +1305,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.4.1",
+            "version": "v5.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f"
+                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/264dce589e7ce37a7ba99cb901eed8249fbec92f",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
+                "reference": "1a7ea2afc49c3ee6d87061f5a233e3a035d0eae7",
                 "shasum": ""
             },
             "require": {
@@ -1356,15 +1329,19 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.21 || ^9.5.10"
+                "phpunit/phpunit": "^7.5.20 || ^8.5.30 || ^9.5.25"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": true
+                },
                 "branch-alias": {
-                    "dev-master": "5.4-dev"
+                    "dev-master": "5.5-dev"
                 }
             },
             "autoload": {
@@ -1396,7 +1373,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.1"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.5.0"
             },
             "funding": [
                 {
@@ -1408,7 +1385,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-12T23:22:04+00:00"
+            "time": "2022-10-16T01:01:54+00:00"
         },
         {
             "name": "voku/simple_html_dom",
@@ -1559,20 +1536,20 @@
         },
         {
             "name": "wp-graphql/wp-graphql",
-            "version": "v1.11.3",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-graphql/wp-graphql.git",
-                "reference": "af64d7483e3cd84b37d497a331543f31c1db30a7"
+                "reference": "6de28e35389891781b8107e0404fa8e0c415c844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-graphql/wp-graphql/zipball/af64d7483e3cd84b37d497a331543f31c1db30a7",
-                "reference": "af64d7483e3cd84b37d497a331543f31c1db30a7",
+                "url": "https://api.github.com/repos/wp-graphql/wp-graphql/zipball/6de28e35389891781b8107e0404fa8e0c415c844",
+                "reference": "6de28e35389891781b8107e0404fa8e0c415c844",
                 "shasum": ""
             },
             "require": {
-                "appsero/client": "^1.2",
+                "appsero/client": "1.2.1",
                 "ivome/graphql-relay-php": "0.6.0",
                 "php": "^7.1 || ^8.0",
                 "webonyx/graphql-php": "14.9.0"
@@ -1587,13 +1564,13 @@
                 "codeception/module-rest": "^1.2",
                 "codeception/module-webdriver": "^1.0",
                 "codeception/util-universalframework": "^1.0",
-                "lucatume/wp-browser": "3.1.0",
+                "lucatume/wp-browser": "^3.1.6",
                 "phpcompatibility/phpcompatibility-wp": "^2.1",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^1.7",
                 "phpunit/phpunit": "^9.5",
                 "simpod/php-coveralls-mirror": "^3.0",
-                "szepeviktor/phpstan-wordpress": "1.1.1",
+                "szepeviktor/phpstan-wordpress": "1.1.3",
                 "wp-graphql/wp-graphql-testcase": "~2.3"
             },
             "type": "wordpress-plugin",
@@ -1632,29 +1609,47 @@
             "description": "GraphQL API for WordPress",
             "support": {
                 "issues": "https://github.com/wp-graphql/wp-graphql/issues",
-                "source": "https://github.com/wp-graphql/wp-graphql/tree/v1.11.3"
+                "source": "https://github.com/wp-graphql/wp-graphql/tree/v1.12.0"
             },
-            "time": "2022-10-05T22:26:21+00:00"
+            "time": "2022-10-10T15:55:42+00:00"
         },
         {
             "name": "wp-graphql/wp-graphql-acf",
-            "version": "v0.3.5",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-graphql/wp-graphql-acf.git",
-                "reference": "11a2a10a4abb51c541fd7b0ba0b81d1491525136"
+                "reference": "8c6a18563bbc6dde276e1a09429b525df54fe2c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-graphql/wp-graphql-acf/zipball/11a2a10a4abb51c541fd7b0ba0b81d1491525136",
-                "reference": "11a2a10a4abb51c541fd7b0ba0b81d1491525136",
+                "url": "https://api.github.com/repos/wp-graphql/wp-graphql-acf/zipball/8c6a18563bbc6dde276e1a09429b525df54fe2c2",
+                "reference": "8c6a18563bbc6dde276e1a09429b525df54fe2c2",
                 "shasum": ""
             },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-                "lucatume/wp-browser": "^2.2.",
-                "phpcompatibility/phpcompatibility-wp": "^2.0",
-                "wp-coding-standards/wpcs": "^2.1"
+                "codeception/module-asserts": "^1.0",
+                "codeception/module-cli": "^1.0",
+                "codeception/module-db": "^1.0",
+                "codeception/module-filesystem": "^1.0",
+                "codeception/module-phpbrowser": "^1.0",
+                "codeception/module-rest": "^1.2",
+                "codeception/module-webdriver": "^1.0",
+                "codeception/util-universalframework": "^1.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+                "lucatume/wp-browser": "^2.4",
+                "phpcompatibility/phpcompatibility-wp": "2.1.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan": "^0.12.64",
+                "phpunit/phpunit": "^8.5",
+                "simpod/php-coveralls-mirror": "^3.0",
+                "squizlabs/php_codesniffer": "3.5.4",
+                "szepeviktor/phpstan-wordpress": "^0.7.1",
+                "wp-coding-standards/wpcs": "2.1.1",
+                "wp-graphql/wp-graphql-testcase": "~2.1"
             },
             "type": "wordpress-plugin",
             "autoload": {
@@ -1678,9 +1673,9 @@
             "description": "Advanced Custom Fields bindings for wp-graphql",
             "support": {
                 "issues": "https://github.com/wp-graphql/wp-graphql-acf/issues",
-                "source": "https://github.com/wp-graphql/wp-graphql-acf/tree/master"
+                "source": "https://github.com/wp-graphql/wp-graphql-acf/tree/v0.6.1"
             },
-            "time": "2020-07-27T13:32:21+00:00"
+            "time": "2022-09-16T16:50:00+00:00"
         },
         {
             "name": "wpackagist-theme/twentytwentytwo",
@@ -1708,12 +1703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "b311503298c072e565411e3ef61c04519272473f"
+                "reference": "1d3484a08d3875e28bc2ad66697b0947cd6a2d99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/b311503298c072e565411e3ef61c04519272473f",
-                "reference": "b311503298c072e565411e3ef61c04519272473f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/1d3484a08d3875e28bc2ad66697b0947cd6a2d99",
+                "reference": "1d3484a08d3875e28bc2ad66697b0947cd6a2d99",
                 "shasum": ""
             },
             "conflict": {
@@ -1927,6 +1922,9 @@
                 "matyhtf/framework": "<3.0.6",
                 "mautic/core": "<4.3|= 2.13.1",
                 "mediawiki/core": ">=1.27,<1.27.6|>=1.29,<1.29.3|>=1.30,<1.30.2|>=1.31,<1.31.9|>=1.32,<1.32.6|>=1.32.99,<1.33.3|>=1.33.99,<1.34.3|>=1.34.99,<1.35",
+                "melisplatform/melis-asset-manager": "<5.0.1",
+                "melisplatform/melis-cms": "<5.0.1",
+                "melisplatform/melis-front": "<5.0.1",
                 "mezzio/mezzio-swoole": "<3.7|>=4,<4.3",
                 "microweber/microweber": "<=1.3.1",
                 "miniorange/miniorange-saml": "<1.4.3",
@@ -1956,7 +1954,7 @@
                 "october/cms": "= 1.1.1|= 1.0.471|= 1.0.469|>=1.0.319,<1.0.469",
                 "october/october": ">=1.0.319,<1.0.466|>=2.1,<2.1.12",
                 "october/rain": "<1.0.472|>=1.1,<1.1.2",
-                "october/system": "<1.0.476|>=1.1,<1.1.12|>=2,<2.2.15",
+                "october/system": "<2.2.34|>=3,<3.0.66",
                 "onelogin/php-saml": "<2.10.4",
                 "oneup/uploader-bundle": "<1.9.3|>=2,<2.1.5",
                 "open-web-analytics/open-web-analytics": "<1.7.4",
@@ -2225,7 +2223,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-06T20:04:40+00:00"
+            "time": "2022-10-13T20:04:41+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -2292,7 +2290,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.0.19"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
