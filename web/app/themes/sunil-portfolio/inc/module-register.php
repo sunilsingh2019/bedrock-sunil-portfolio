@@ -224,6 +224,52 @@ function nextgen_doncaster_acf_init() {
 			'category'			=> 'custom_modules',
 			
 		));
+		acf_register_block(array(
+			'name'				=> 'full-card-module',
+			'title'				=> __('Full card Module'),
+			'description'		=> __('Full Card Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+		acf_register_block(array(
+			'name'				=> 'get-in-touch-module',
+			'title'				=> __('Get in touch Module'),
+			'description'		=> __('Get in touch Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+
+		acf_register_block(array(
+			'name'				=> 'free-text-module',
+			'title'				=> __('Free text Module'),
+			'description'		=> __('Free text Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+
+		acf_register_block(array(
+			'name'				=> 'step-module',
+			'title'				=> __('Step Module'),
+			'description'		=> __('Step Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
 
 	}
 }
