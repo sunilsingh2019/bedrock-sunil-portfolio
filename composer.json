@@ -1,9 +1,9 @@
 {
-  "name": "roots/bedrock",
+  "name": "roots/sunil-portfolio",
   "type": "project",
   "license": "MIT",
   "description": "WordPress boilerplate with Composer, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
+  "homepage": "https://sunilsingh.com.au/",
   "authors": [
     {
       "name": "Scott Walkinshaw",
