@@ -1,0 +1,549 @@
+{
+    "key": "group_634f4532c1f2c",
+    "title": "Tab Module",
+    "fields": [
+        {
+            "key": "field_634f453b04bc2",
+            "label": "Tab Module",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_634f454d04bc3",
+            "label": "Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_634f45aee1c87",
+            "label": "Tab",
+            "name": "tab",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_634f45e7e1c88",
+                    "label": "Item",
+                    "name": "",
+                    "type": "accordion",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "open": 0,
+                    "multi_expand": 0,
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_634f462ebf2f8",
+                    "label": "Content Block",
+                    "name": "content_block",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634f46ecd3f25",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_634f4823c241e",
+                    "label": "Skills Counter",
+                    "name": "skills_counter",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634f4897f8ae5",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_634f4845c2420",
+                            "label": "Percent",
+                            "name": "percent",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_634f484ec2421",
+                            "label": "Technology",
+                            "name": "technology",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_634f496c02714",
+                    "label": "Two Column Cards",
+                    "name": "two_column_cards",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634f49e087d4d",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_634f498102715",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_634f498602716",
+                            "label": "Logo",
+                            "name": "logo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_634f49ba02717",
+                            "label": "Position",
+                            "name": "position",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_634f49c002718",
+                            "label": "Year",
+                            "name": "year",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_634f49c702719",
+                            "label": "Blurb",
+                            "name": "blurb",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_634f4a471e515",
+                    "label": "Four Column Cards",
+                    "name": "four_column_cards",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_634f4a701e51b",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_634f4a471e516",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_634f4a471e517",
+                            "label": "Logo",
+                            "name": "logo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_634f4a471e51a",
+                            "label": "Blurb",
+                            "name": "blurb",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "show_in_graphql": 1,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "new_lines": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_634f458db3aaf",
+            "label": "Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_634f46b1d3f24",
+            "label": "Enable \/ Disable Modue",
+            "name": "enable_disable_modue",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
+        },
+        {
+            "key": "field_634f46ecd3f25",
+            "label": "Enable \/ Disable Content Block",
+            "name": "enable_disable_content_block",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
+        },
+        {
+            "key": "field_634f4897f8ae5",
+            "label": "Enable \/ Disable Skills Counter",
+            "name": "enable_disable_skills_counter",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
+        },
+        {
+            "key": "field_634f49e087d4d",
+            "label": "Enable \/ Disable Two Column Cards",
+            "name": "enable_disable_two_column_cards",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
+        },
+        {
+            "key": "field_634f4a701e51b",
+            "label": "Enable \/ Disable Four Column Cards",
+            "name": "enable__disable_four_column_cards",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Enable",
+            "ui_off_text": "Disable"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/tab-module"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "tabModule",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1666141243
+}

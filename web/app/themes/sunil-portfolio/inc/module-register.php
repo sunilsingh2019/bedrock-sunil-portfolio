@@ -143,17 +143,87 @@ function nextgen_doncaster_acf_init() {
 			'icon'              => 'superhero',
 			'keywords'          => array( 'location', 'blog', 'content' ),
 			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',			
+		));
+		acf_register_block(array(
+			'name'				=> 'profile-module',
+			'title'				=> __('Profile Module'),
+			'description'		=> __('Profile Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+		acf_register_block(array(
+			'name'				=> 'tab-module',
+			'title'				=> __('Tab Module'),
+			'description'		=> __('Tab Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
 			'category'			=> 'custom_modules',
 			
 		));
 
-	}
-}
 
-function nextgen_doncaster_acf_module_template_block_render_callback($block) {
-	$slug = str_replace('acf/', '', $block['name']);
-	// include a template part from within the "template-parts/block" folder
-	if( file_exists( get_theme_file_path("/template-parts/block/content-{$slug}.php") ) ) {
-		include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
+		acf_register_block(array(
+			'name'				=> 'left-right-text-image-module',
+			'title'				=> __('Left Right Image text Module'),
+			'description'		=> __('Left Right Image text Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+		acf_register_block(array(
+			'name'				=> 'counter-module',
+			'title'				=> __('Counter Module'),
+			'description'		=> __('Counter Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+		acf_register_block(array(
+			'name'				=> 'Image-module',
+			'title'				=> __('Image Module'),
+			'description'		=> __('Image Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+		acf_register_block(array(
+			'name'				=> 'logo-module',
+			'title'				=> __('Logo Module'),
+			'description'		=> __('Logo Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+		acf_register_block(array(
+			'name'				=> 'full-card-module',
+			'title'				=> __('Full card Module'),
+			'description'		=> __('Full Card Module'),
+			'render_callback'	=> 'nextgen_doncaster_acf_module_template_block_render_callback',
+			'icon'              => 'superhero',
+			'keywords'          => array( 'location', 'blog', 'content' ),
+			'mode'				=> 'edit',
+			'category'			=> 'custom_modules',
+			
+		));
+
 	}
 }

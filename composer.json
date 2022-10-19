@@ -36,7 +36,7 @@
         "wpackagist-plugin/*",
         "wpackagist-theme/*"
       ]
-    }
+    }   
   ],
   "require": {
     "php": ">=7.4",
@@ -52,7 +52,8 @@
     "wp-graphql/wp-graphql": "^1.12",
     "wp-graphql/wp-graphql-acf": "^0.6.1",
     "pristas-peter/wp-graphql-gutenberg": "^0.3.12",
-    "wp-graphql/wp-graphql-custom-post-type-ui": "^1.2"
+    "harness-software/wp-graphql-gravity-forms": "^0.11.6"
+   
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",
@@ -63,7 +64,9 @@
     "preferred-install": "dist",
     "allow-plugins": {
       "composer/installers": true,
-      "roots/wordpress-core-installer": true
+      "roots/wordpress-core-installer": true,
+      "ffraenz/private-composer-installer": true,
+      "gotoandplay/gravityforms-composer-installer": true
     }
   },
   "minimum-stability": "dev",

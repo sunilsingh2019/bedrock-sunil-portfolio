@@ -109,12 +109,11 @@ add_action( 'after_setup_theme', 'sunil_portfolio_setup' );
  *
  * @global int $content_width
  */
+
 function sunil_portfolio_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'sunil_portfolio_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'sunil_portfolio_content_width', 0 );
-
-
 
 if( function_exists('acf_add_options_page') ) {
 	
@@ -139,9 +138,10 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 		'show_in_graphql' => true
 	));
+
 	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Theme Social Icon Settings',
-		'menu_title'	=> 'Social Icon',
+		'page_title' 	=> 'Footer Bottom Settings',
+		'menu_title'	=> 'Footer Bottom',
 		'parent_slug'	=> 'theme-general-settings',
 		'show_in_graphql' => true
 	));
